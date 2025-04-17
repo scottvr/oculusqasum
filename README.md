@@ -7,7 +7,7 @@
 "ä′k-yo͞o-ləs kyo͞o-ā′-so͞om"
 (AHK-yoo-luhs cue-AY-soom)
 
-> **Oculus Q**uod **A**ssumit.  
+> **Oculus Q**uod **A**s**sum**it.  
 > *The eye that takes what it takes.*
 
 *motto*
