@@ -10,7 +10,7 @@
 
 ---
 
-## (o)(o) Vision
+## Vision
 
 _Those are eyes, I swear._
 
@@ -18,7 +18,7 @@ OculusQAsum is a powerful visual QA system that bridges the gap between design a
 
 What sets it apart from tools that inspired it (Percy, Chromatic, etc) is that OculusQAsum goes further, opening and resolving issues using your ticket tracker and submitting PRs with tested fixes for the issues.
 
-## * Features
+## Features
 
 - **Visual Inconsistency Detection**: Pixel-perfect comparison between design mockups and developed UI
 - **Auto-Generated GitHub Issues**: Creates detailed tickets with visual evidence and priority labels
@@ -28,7 +28,7 @@ What sets it apart from tools that inspired it (Percy, Chromatic, etc) is that O
 - **Multi-Viewport Testing**: Verifies consistency across desktop, tablet, and mobile views
 - **Real-time Alerts**: Integrates with Slack, Teams, and email for instant notifications
 
-## ! Quick Start
+## Quick Start
 
 ```bash
 # Install globally
