@@ -3,16 +3,19 @@
 </p>
 
 ---
+/ˈɑːkjʊləs ˌkjuː.eɪˈsuːm/
+"ä′k-yo͞o-ləs kyo͞o-ā′-so͞om"
+(AHK-yoo-luhs cue-AY-soom)
 
-*motto*
 > **Oculus Q**uod **A**ssumit.  
 > *The eye that takes what it takes.*
 
+*motto*
+“Nihil assume. Omnia observa. Quidvis resolve.”
+*Assume nothing. Observe everything. Resolve anything.* 
 ---
 
 ## Vision
-
-_Those are eyes, I swear._
 
 OculusQAsum is a powerful visual QA system that bridges the gap between design and development, ensuring pixel-perfect implementation of web interfaces. It automatically detects visual inconsistencies, generates tickets, fixes bugs, and monitors for regressions - all with a blend of technical precision and intelligent automation.
 
