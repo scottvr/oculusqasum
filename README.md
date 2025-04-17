@@ -10,22 +10,6 @@
 
 ---
 
-*sacred incantation*
-
-**O**bservatio  
-**C**ognitio  
-**U**niversalis  
-**L**ogica  
-**U**ltima  
-**S**ystema  
-
-**Q**uestionis  
-**A**ssumptionisque  
-
-**Summa**
-
----
-
 ## (o)(o) Vision
 
 _Those are eyes, I swear._
@@ -203,3 +187,20 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Visual comparison powered by [pixelmatch](https://github.com/mapbox/pixelmatch) and [ResembleJS](https://github.com/rsmbl/Resemble.js)
 - LLM capabilities by OpenAI and Anthropic
 - Inspired by tools like Percy, Chromatic, and BackstopJS
+
+
+## sacred incantation
+
+**O**bservatio  
+**C**ognitio  
+**U**niversalis  
+**L**ogica  
+**U**ltima  
+**S**ystema  
+
+**Q**uestionis  
+**A**ssumptionisque  
+
+**Summa**
+
+---
