@@ -161,7 +161,7 @@ async function runVisualQA() {
 
 See [API Reference](docs/api-reference.md) for complete documentation.
 
-## 🔌 Integrations
+### Integrations
 
 OculusQAsum integrates with popular design, development, and communication tools:
 
