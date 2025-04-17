@@ -1,4 +1,4 @@
-// visual-vigilante/src/core/live-monitor.js
+// oculus-qasum/src/core/live-monitor.js
 
 const { chromium } = require('playwright');
 const cron = require('node-cron');

@@ -34,7 +34,7 @@ const logo = `
 `;
 
 // Default configuration file path
-const DEFAULT_CONFIG_PATH = path.resolve(process.cwd(), 'visual-vigilante.config.yml');
+const DEFAULT_CONFIG_PATH = path.resolve(process.cwd(), 'oculus-qasum-conf.yaml');
 
 /**
  * Load configuration from file
@@ -69,7 +69,7 @@ async function init() {
   console.log(chalk.bold('  The Visual QA System for Web Interfaces\n'));
   
   program
-    .name('visual-vigilante')
+    .name('oculus-qasum')
     .description('A visual QA system for web interfaces')
     .version('1.0.0');
   
@@ -96,7 +96,7 @@ async function init() {
               enabled: true,
               model: 'gpt-4-vision-preview'
             },
-            outputDir: './visual-vigilante-results'
+            outputDir: './oculus-qasum-results'
           },
           github: {
             owner: 'your-username',
@@ -128,7 +128,7 @@ async function init() {
               pixelDifference: 0.03
             },
             storage: {
-              baseDir: './visual-vigilante-snapshots',
+              baseDir: './oculus-qasum-snapshots',
               maxSnapshots: 20
             },
             webhooks: [
@@ -159,18 +159,18 @@ GITHUB_REPO=your-github-repo
         await fs.writeFile(path.resolve(process.cwd(), '.env'), envContent);
         
         // Create directories
-        await fs.mkdir(path.resolve(process.cwd(), 'visual-vigilante-results'), { recursive: true });
-        await fs.mkdir(path.resolve(process.cwd(), 'visual-vigilante-snapshots'), { recursive: true });
+        await fs.mkdir(path.resolve(process.cwd(), 'oculus-qasum-results'), { recursive: true });
+        await fs.mkdir(path.resolve(process.cwd(), 'oculus-qasum-snapshots'), { recursive: true });
         
         spinner.succeed('Initialized VisualVigilante successfully!');
         
         console.log(boxen(
           `${chalk.green('VisualVigilante initialized!')}
           
-Edit ${chalk.cyan('visual-vigilante.config.yml')} to configure your project.
+Edit ${chalk.cyan('oculus-qasum.config.yml')} to configure your project.
 Don't forget to update your API keys in ${chalk.cyan('.env')}.
 
-Run ${chalk.cyan('npx visual-vigilante compare')} to start comparing your designs with implementations.`,
+Run ${chalk.cyan('npx oculus-qasum compare')} to start comparing your designs with implementations.`,
           { padding: 1, borderColor: 'green', margin: 1 }
         ));
       } catch (error) {

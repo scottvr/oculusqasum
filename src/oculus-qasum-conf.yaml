@@ -1,0 +1,121 @@
+# oculus-qasum.config.yml
+
+# Visual Comparison Engine Configuration
+comparison:
+  # Thresholds for detecting differences
+  thresholds:
+    # Percentage of pixels that can differ before considering it significant
+    pixelDifference: 0.05  # 5% threshold
+    # Percentage of structural changes that can differ before considering it significant
+    structuralDifference: 0.1  # 10% threshold
+  
+  # Browser configuration for screenshot capture
+  browser:
+    # Whether to run browser in headless mode
+    headless: true
+    # Slow down browser operations by X milliseconds (useful for debugging)
+    slowMo: 0
+  
+  # LLM configuration for visual analysis
+  llm:
+    # Enable/disable LLM analysis
+    enabled: true
+    # Model to use for analysis
+    model: "gpt-4-vision-preview"
+  
+  # Directory for comparison results
+  outputDir: "./oculus-qasum-results"
+
+# GitHub Integration Configuration
+github:
+  # GitHub repository owner
+  owner: "your-username"
+  # GitHub repository name
+  repo: "your-repo"
+  
+  # Labels to apply to created issues
+  issueLabels:
+    - "visual-regression"
+    - "automated"
+  
+  # Thresholds for determining issue priority
+  priorityThresholds:
+    # >15% difference is high priority
+    high: 0.15
+    # >8% difference is medium priority
+    medium: 0.08
+    # >3% difference is low priority
+    low: 0.03
+
+# LLM Configuration for Fix Generation
+llm:
+  # Provider to use (openai or anthropic)
+  provider: "openai"
+  # Model to use for fix generation
+  model: "gpt-4-1106-preview"
+  # Temperature for generation (lower = more deterministic)
+  temperature: 0.2
+
+# Live Monitoring Configuration
+monitoring:
+  # Cron schedule for monitoring (default: every 6 hours)
+  schedule: "0 */6 * * *"
+  
+  # URLs to monitor
+  urls:
+    - "https://example.com"
+    - "https://example.com/dashboard"
+    - "https://example.com/profile"
+  
+  # Viewports to test
+  viewports:
+    - width: 1920
+      height: 1080
+      name: "desktop"
+    - width: 768
+      height: 1024
+      name: "tablet" 
+    - width: 375
+      height: 812
+      name: "mobile"
+  
+  # Selectors to monitor
+  selectors:
+    - "body"  # Full page
+    - ".header"
+    - ".hero-section"
+    - ".footer"
+  
+  # Thresholds for alerting
+  thresholds:
+    # Percentage of pixels that can differ before alerting
+    pixelDifference: 0.03  # 3% threshold
+  
+  # Storage configuration
+  storage:
+    # Base directory for snapshots
+    baseDir: "./oculus-qasum-snapshots"
+    # Maximum number of historical snapshots to keep
+    maxSnapshots: 20
+  
+  # Alert webhook configuration
+  webhooks:
+    # Slack integration
+    - type: "slack"
+      url: "https://hooks.slack.com/services/YOUR_SLACK_WEBHOOK"
+    
+    # Microsoft Teams integration
+    - type: "teams"
+      url: "https://outlook.office.com/webhook/YOUR_TEAMS_WEBHOOK"
+    
+    # Email alerts
+    - type: "email"
+      recipients:
+        - "dev-team@example.com"
+        - "design-team@example.com"
+    
+    # Generic webhook (for custom integrations)
+    - type: "generic"
+      url: "https://your-custom-service.com/webhook"
+      headers:
+        Authorization: "Bearer YOUR_AUTH_TOKEN"

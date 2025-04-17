@@ -1,4 +1,4 @@
-// visual-vigilante/index.js
+// oculus-qasum/index.js
 
 const VisualComparisonEngine = require('./src/core/comparison-engine');
 const IssueTracker = require('./src/integrations/issue-tracker');

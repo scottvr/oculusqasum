@@ -1,4 +1,4 @@
-// visual-vigilante/src/core/fix-generator.js
+// oculus-qasum/src/core/fix-generator.js
 
 const { OpenAI } = require('openai');
 const { LangChainPromptTemplate } = require('langchain');
