@@ -1,6 +1,7 @@
 <p align="center">
   <img src="docs/assets/oqas-logo-text.png" alt="OculusQAsum Logo" width="200">
 </p>
+
 ---
 
 *motto*
