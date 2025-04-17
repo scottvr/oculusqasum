@@ -53,9 +53,13 @@ OculusQAsum works through four main components:
 3. **Fix Generator**: Uses AI to understand visual discrepancies and generate code fixes
 4. **Live Monitor**: Continuously watches for regressions in your production environment
 
-<p align="center">
-  <img src="docs/assets/workflow-diagram.png" alt="OculusQAsum Workflow" width="600">
-</p>
+``` mermaid
+graph TD
+    A[Design System Parser] --> C[Comparison Engine]
+    B[Headless Browser Capture] --> C
+    C --> D[Discrepancy Detection]
+    D --> E[Report Generation]
+```
 
 ## Installation
 
