@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 2rem; /* Design was 1rem 2rem - deliberate inconsistency */
+    padding: 1rem 2rem; 
     background-color: var(--background);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     position: sticky;
@@ -19,7 +19,7 @@
 
 .nav-links {
     display: flex;
-    gap: 2rem; /* Design was 2.5rem - deliberate inconsistency */
+    gap: 2.5rem; 
 }
 
 .nav-links li a {
@@ -32,7 +32,6 @@
 /* Active link styling - missing underline effect (deliberate inconsistency) */
 .nav-links li a.active {
     color: var(--implemented-primary);
-    /* Design had an underline effect:
     &::after {
         content: '';
         position: absolute;
@@ -42,7 +41,6 @@
         height: 2px;
         background-color: var(--primary-color);
     }
-    */
 }
 
 .nav-links li a:hover {
@@ -73,7 +71,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%; /* Design was 100% - deliberate inconsistency */
+        width: 100%; 
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         padding: 2rem 0;
