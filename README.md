@@ -1,8 +1,7 @@
 <p align="center">
-  <img src="docs/assets/oqas-logo.png" alt="OculusQAsum Logo" width="200">
+  <img src="docs/assets/oqas-logo-text.png" alt="OculusQAsum Logo" width="200">
 </p>
-
-## *OculusQAsum*
+---
 
 *motto*
 > **Oculus Q**uod **A**ssumit.  
