@@ -19,7 +19,7 @@
 
 OculusQAsum is a powerful visual QA system that bridges the gap between design and development, ensuring pixel-perfect implementation of web interfaces. It automatically detects visual inconsistencies, generates tickets, fixes bugs, and monitors for regressions - all with a blend of technical precision and intelligent automation.
 
-What sets it apart from tools that inspired it (Percy, Chromatic, etc) is that OculusQAsum goes further, opening and resolving issues using your ticket tracker and submitting PRs with tested fixes for the issues.
+What sets it apart from tools that inspired it (Percy, Chromatic, etc) is that OculusQAsum goes further, opening and resolving issues using your ticket tracker and submitting PRs with tested fixes for the issues it detects. 
 
 ## Features
 
