@@ -55,12 +55,12 @@ OculusQAsum works through four main components:
 
 ``` mermaid
 graph TD
-    A[Design System] --> C[Comparison Engine]
+    A[Design System] --> C[1\. Comparison Engine]
     B[Implementation] --> C
     C --> D[Discrepancy Analysis]
-    D --> E[Issue Tracker]
-    D --> F[Fix Generator]
-    G[Production UI] --> H[Live Monitor]
+    D --> E[2\. Issue Tracker]
+    D --> F[3\. Fix Generator]
+    G[Production UI] --> H[4\. Live Monitor]
     H --> D
     
     E --> I[GitHub Issues]
