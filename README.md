@@ -1,5 +1,3 @@
-# OculusQAsum
-
 <p align="center">
   <img src="docs/assets/oculusqasum-logo.png" alt="OculusQAsum Logo" width="200">
 </p>
