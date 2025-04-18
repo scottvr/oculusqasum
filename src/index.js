@@ -1,19 +1,18 @@
-// oculus-qasum/index.js
+import { VisualComparisonEngine } from './src/core/comparison-engine.js';
+import { IssueTracker } from './src/integrations/issue-tracker.js';
+import { FixGenerator } from './src/core/fix-generator.js';
+import { LiveMonitor } from './src/core/live-monitor.js';
 
-const VisualComparisonEngine = require('./src/core/comparison-engine');
-const IssueTracker = require('./src/integrations/issue-tracker');
-const FixGenerator = require('./src/core/fix-generator');
-const LiveMonitor = require('./src/core/live-monitor');
 
 /**
- * VisualVigilante - Visual QA System for Web Interfaces
+ * OculusQAsum - Visual QA System for Web Interfaces
  * 
  * This module provides a comprehensive toolset for detecting and fixing visual inconsistencies
  * between design mockups and developed UI interfaces.
  */
-class VisualVigilante {
+class OculusQAsum {
   /**
-   * Create a new VisualVigilante instance
+   * Create a new OculusQAsum instance
    * 
    * @param {Object} config - Configuration options
    */
@@ -209,11 +208,11 @@ class VisualVigilante {
   }
 }
 
-// Export main class and individual components
-module.exports = {
-  VisualVigilante,
-  VisualComparisonEngine,
-  IssueTracker,
-  FixGenerator,
-  LiveMonitor
+// Export as named exports instead of default export
+export { 
+  OculusQAsum, 
+  VisualComparisonEngine, 
+  IssueTracker, 
+  FixGenerator, 
+  LiveMonitor 
 };

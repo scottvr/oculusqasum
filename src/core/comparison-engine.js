@@ -1,13 +1,18 @@
-const { chromium } = require('playwright');
-const fs = require('fs').promises;
-const path = require('path');
-const { PNG } = require('pngjs');
-const pixelmatch = require('pixelmatch');
-const resemble = require('resemblejs');
-const { createCanvas, loadImage } = require('canvas');
-const { OpenAI } = require('openai');
+import { chromium } from 'playwright';
+import { promises as fs } from 'fs';
+import path from 'path';
+import { PNG } from 'pngjs';
+import pixelmatch from 'pixelmatch';
+import resemblejs from 'resemblejs';
+import { createCanvas, loadImage } from 'canvas';
+import { OpenAI } from 'openai';
+import { fileURLToPath } from 'url';
 
-class VisualComparisonEngine {
+// Get directory name in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export class VisualComparisonEngine {
   constructor(config = {}) {
     this.config = {
       thresholds: {

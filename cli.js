@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/*
+
 const { program } = require('commander');
 const path = require('path');
 const fs = require('fs').promises;
@@ -8,30 +8,10 @@ const dotenv = require('dotenv');
 const chalk = require('chalk');
 const ora = require('ora');
 const boxen = require('boxen');
-const VisualComparisonEngine = require('../src/core/comparison-engine');
-const IssueTracker = require('../src/integrations/issue-tracker');
-const FixGenerator = require('../src/core/fix-generator');
-const LiveMonitor = require('../src/core/live-monitor');
-*/
-#!/usr/bin/env node
-
-import { program } from 'commander';
-import path from 'path';
-import { promises as fs } from 'fs';
-import yaml from 'js-yaml';
-import dotenv from 'dotenv';
-import chalk from 'chalk';
-import ora from 'ora';
-import boxen from 'boxen';
-import { VisualComparisonEngine } from './src/core/comparison-engine.js';
-import { IssueTracker } from './src/integrations/issue-tracker.js';
-import { FixGenerator } from './src/core/fix-generator.js';
-import { LiveMonitor } from './src/core/live-monitor.js';
-import { fileURLToPath } from 'url';
-
-// Get directory name in ESM
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const VisualComparisonEngine = require('./src/core/comparison-engine');
+const IssueTracker = require('./src/integrations/issue-tracker');
+const FixGenerator = require('./src/core/fix-generator');
+const LiveMonitor = require('./src/core/live-monitor');
 
 // Load environment variables
 dotenv.config();

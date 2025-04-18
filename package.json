@@ -2,6 +2,7 @@
   "name": "oculus-qasum",
   "version": "0.1.0",
   "description": "Visual QA system for web interfaces that detects and fixes visual inconsistencies",
+  "type": "module",
   "main": "index.js",
   "bin": {
     "oculus-qasum": "./cli.js"

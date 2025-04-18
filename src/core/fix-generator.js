@@ -1,11 +1,13 @@
-// oculus-qasum/src/core/fix-generator.js
+import { OpenAI } from 'openai';
+import { promises as fs } from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const { OpenAI } = require('openai');
-const { LangChainPromptTemplate } = require('langchain');
-const fs = require('fs').promises;
-const path = require('path');
+// Get directory name in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-class FixGenerator {
+export class FixGenerator {
   constructor(config = {}) {
     this.config = {
       llm: {
@@ -38,7 +40,7 @@ class FixGenerator {
       // Would use appropriate Anthropic API client
       this.llmClient = null; // Placeholder for now
     }
-  }
+  } 
   
   /**
    * Generate fixes for visual discrepancies based on comparison results
@@ -378,5 +380,3 @@ Please provide:
     return sourceCode.substring(0, maxLength);
   }
 }
-
-module.exports = FixGenerator;

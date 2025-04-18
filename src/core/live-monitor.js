@@ -560,7 +560,7 @@ class LiveMonitor extends EventEmitter {
             elements: [
               {
                 type: 'mrkdwn',
-                text: `Detected at ${new Date().toISOString()} by VisualVigilante`
+                text: `Detected at ${new Date().toISOString()} by OculusQAsum`
               }
             ]
           }
