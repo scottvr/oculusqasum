@@ -3,20 +3,23 @@
 </p>
 
 ---
+/ˈɑːkjʊləs ˌkjuː.eɪˈsuːm/
+"ä′k-yo͞o-ləs kyo͞o-ā′-so͞om"
+(AHK-yoo-luhs cue-AY-soom)
 
-*motto*
-> **Oculus Q**uod **A**ssumit.  
+> **Oculus Q**uod **A**s**sum**it.  
 > *The eye that takes what it takes.*
 
+*motto*
+“Nihil assume. Omnia observa. Quidvis resolve.”
+*Assume nothing. Observe everything. Resolve anything.* 
 ---
 
 ## Vision
 
-_Those are eyes, I swear._
-
 OculusQAsum is a powerful visual QA system that bridges the gap between design and development, ensuring pixel-perfect implementation of web interfaces. It automatically detects visual inconsistencies, generates tickets, fixes bugs, and monitors for regressions - all with a blend of technical precision and intelligent automation.
 
-What sets it apart from tools that inspired it (Percy, Chromatic, etc) is that OculusQAsum goes further, opening and resolving issues using your ticket tracker and submitting PRs with tested fixes for the issues.
+What sets it apart from tools that inspired it (Percy, Chromatic, etc) is that OculusQAsum goes further, opening and resolving issues using your ticket tracker and submitting PRs with tested fixes for the issues it detects. 
 
 ## Features
 
